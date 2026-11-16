@@ -6,3 +6,4 @@ RUN git clone https://github.com/xzhuo/kmeric.git
 WORKDIR /kmeric
 RUN conda env create --file envs/kmer.yml
 RUN conda env create --file envs/align.yml
+RUN conda create -n bracken bioconda::bracken
